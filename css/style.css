@@ -48,6 +48,22 @@
     margin-right: 41px;
 }
 
+.header__search-icon {
+    border: none;
+    background-color: transparent;
+}
+
+.hover__icon {
+    fill: #FBFBFB;
+}
+
+.hover__button:hover .hover__icon,
+.hover__button:focus .hover__icon,
+.hover__button:active .hover__icon {
+    fill: var(--pink-color);
+    cursor: pointer;
+}
+
 .header__menu-list {
     display: flex;
     align-items: center;
@@ -207,6 +223,48 @@ main {
     background-color: var(--card-bkg);
 }
 
+.item-wrapper{
+    position: relative;
+}
+
+.item-wrapper::before{
+    content: '';
+    width: 100%;
+    min-height: 420px;
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+    display: none;
+    }
+
+.products__item-button{
+    position: absolute;
+    padding: 9px 13px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    top: 30%;
+    left: 30%;
+    background-color: transparent;
+    display: none;
+}
+
+
+.products__item:hover .products__item-button{
+    display: flex;
+    align-items: center;
+}
+
+.products__item:hover .item-wrapper::before{
+    display: block;
+}
+
+.products__item-basket{
+    margin-right: 11px;
+}
+
 .products__item-title {
     font-weight: 400, Regular;
     font-size: 13px;
@@ -247,6 +305,11 @@ main {
     font-size: 16px;
     line-height: 19px;
     text-decoration: none;
+}
+
+.catalog__link:hover{
+    background-color: var(--pink-color);
+    color: var(--white-color);
 }
 
 .advantages {
@@ -370,6 +433,25 @@ main {
 
 .contacts__link {
     margin-right: 7px;
+    height: 32px;
+    width: 32px;
+    background-color: var(--white-color );
+
+}
+
+.contacts__icon{
+    height: 15px;
+    width: 15px;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contacts__link:hover .contacts__icon{
+    fill: var(--white-color);
+}
+.contacts__link:hover{
+    background-color: var(--pink-color);
 }
 
 .contacts__rights {
