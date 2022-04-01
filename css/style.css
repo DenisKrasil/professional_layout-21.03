@@ -48,6 +48,22 @@
     margin-right: 41px;
 }
 
+.header__search-icon {
+    border: none;
+    background-color: transparent;
+}
+
+.hover__icon {
+    fill: #FBFBFB;
+}
+
+.hover__button:hover .hover__icon,
+.hover__button:focus .hover__icon,
+.hover__button:active .hover__icon {
+    fill: var(--pink-color);
+    cursor: pointer;
+}
+
 .header__menu-list {
     display: flex;
     align-items: center;
@@ -60,6 +76,16 @@
 
 .header__link {
     margin: 0 0 0 33px;
+}
+
+.header__link-effect {
+    position: absolute;
+}
+
+.header__dot {
+    position: relative;
+    right: 15px;
+    bottom: 15px;
 }
 
 .header__nav {
@@ -197,6 +223,48 @@ main {
     background-color: var(--card-bkg);
 }
 
+.item-wrapper{
+    position: relative;
+}
+
+.item-wrapper:before{
+    content: '';
+    width: 100%;
+    min-height: 420px;
+    background: rgba(58, 56, 56, 0.8);
+    position: absolute;
+    top: 0;
+    display: none;
+    }
+
+.products__item-button{
+    position: absolute;
+    padding: 9px 13px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    top: 30%;
+    left: 30%;
+    background-color: transparent;
+    display: none;
+}
+
+
+.products__item:hover .products__item-button{
+    display: flex;
+    align-items: center;
+}
+
+.products__item:hover .item-wrapper:before{
+    display: block;
+}
+
+.products__item-basket{
+    margin-right: 11px;
+}
+
 .products__item-title {
     font-weight: 400, Regular;
     font-size: 13px;
@@ -237,6 +305,11 @@ main {
     font-size: 16px;
     line-height: 19px;
     text-decoration: none;
+}
+
+.catalog__link:hover{
+    background-color: var(--pink-color);
+    color: var(--white-color);
 }
 
 .advantages {
@@ -295,7 +368,6 @@ main {
 }
 
 .inform__wrp {
-
     display: flex;
     flex-grow: 1;
     align-items: center;
@@ -361,6 +433,25 @@ main {
 
 .contacts__link {
     margin-right: 7px;
+    height: 32px;
+    width: 32px;
+    background-color: var(--white-color );
+
+}
+
+.contacts__icon{
+    height: 15px;
+    width: 15px;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contacts__link:hover .contacts__icon{
+    fill: var(--white-color);
+}
+.contacts__link:hover{
+    background-color: var(--pink-color);
 }
 
 .contacts__rights {
@@ -369,4 +460,57 @@ main {
     font-size: 16px;
     line-height: 19px;
     color: var(--white-color);
+}
+
+.registration {
+    background-color: var(--pink-bkg);
+    height: 148px;
+}
+
+.registration__title {
+    text-transform: uppercase;
+    padding-top: 59px;
+    padding-left: 230px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--pink-color);
+}
+
+.form-registration {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-registrtion__loyalty {
+    display: flex;
+    flex-direction: column;
+    max-width: 652px;
+}
+
+.form-registrtion__loyalty-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.form-registrtion__loyalty-text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 16px;
+    position: relative;
+}
+
+.loyalty-text__decor:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    background-image: url(../img/mark.svg);
+    background-size: 15px 15px;
 }
