@@ -227,11 +227,11 @@ main {
     position: relative;
 }
 
-.item-wrapper::before{
+.item-wrapper:before{
     content: '';
     width: 100%;
     min-height: 420px;
-    background: rgba(58, 56, 56, 0.86);
+    background: rgba(58, 56, 56, 0.8);
     position: absolute;
     top: 0;
     display: none;
@@ -257,7 +257,7 @@ main {
     align-items: center;
 }
 
-.products__item:hover .item-wrapper::before{
+.products__item:hover .item-wrapper:before{
     display: block;
 }
 
