@@ -1,0 +1,85 @@
+.shop{
+    &__wrp{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 56px;
+    }
+    
+    &__cart{
+        display: flex;
+        margin-top: 40px;
+        box-shadow: 0px 10px 10px 0px var(--grey-color);
+    }
+    
+    &__list{
+        margin-top: 22px;
+        margin-left: 31px;
+        width: 390px;
+        position: relative;
+    }
+    
+    &__cross{
+        position: absolute;
+        right: 22px;
+    }
+    
+    &__cross:hover,
+    &__cross:focus,
+    &__cross:active{
+        fill: $button-bkg;
+    }
+    
+    &__list-title{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 36px;
+        width: 202px;
+    }
+    
+    &__item{
+        margin-top: 6px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    &__item-pink{
+        color: $pink-color;
+    }
+    
+    &__item-wrp{
+        display: flex;
+    }
+    
+    &__item-select{
+        margin-left: 24px;
+    }
+    
+    &__buttons-wrp{
+        margin-top: 73px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__buttons{
+        margin-bottom: 128px;
+        background-color: $white-color;
+        width: 234px;
+        height: 49px;
+        text-transform: uppercase;
+        border-color: $grey-color;
+        border-style: solid;
+    }
+    
+    &__buttons:hover,
+    &__buttons:focus,
+    &__buttons:active{
+        background-color: $button-bkg;
+        color: $white-color;
+        border: none;
+        cursor: pointer;
+    }
+
+}

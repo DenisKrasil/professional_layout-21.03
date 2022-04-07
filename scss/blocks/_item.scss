@@ -1,0 +1,17 @@
+.item-wrapper{
+    position: relative;
+
+    &:before{
+        content: '';
+        width: 100%;
+        min-height: 420px;
+        background: $dark_grey-bkg;
+        position: absolute;
+        top: 0;
+        }
+    
+    &:before{
+        display: none;
+    }
+}
+
