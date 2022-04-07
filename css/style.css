@@ -621,7 +621,9 @@ main {
   fill: #FFFFFF;
 }
 
-.header__hover-button:hover, .header__hover-button:focus, .header__hover-button:active {
+.header__hover-button:hover .header__hover-icon,
+.header__hover-button:focus .header__hover-icon,
+.header__hover-button:active .header__hover-icon {
   fill: #F18B99;
   cursor: pointer;
 }

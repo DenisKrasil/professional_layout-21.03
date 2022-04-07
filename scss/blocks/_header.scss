@@ -46,14 +46,13 @@
         fill: $white-color;
     }
     
-    &__hover-button{
-        &:hover,
-        &:focus,
-        &:active{
+    &__hover-button:hover &__hover-icon,
+    &__hover-button:focus &__hover-icon,
+    &__hover-button:active &__hover-icon{
             fill: $pink-color;
             cursor: pointer;
         }
-    }
+    
     
     &__menu-list {
         display: flex;
