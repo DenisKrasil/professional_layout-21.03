@@ -1,0 +1,30 @@
+.catalog {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+
+    &__link {
+        display: block;
+        align-items: center;
+        border: 1px solid $pink-color;
+        color: $pink-color;
+        padding: 14px 38px 13px 38px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: none;
+    }
+    
+    &__link{
+        &:hover{
+            background-color: $pink-color;
+            color: $white-color;
+        }
+        &:focus{
+            background-color: $pink-color;
+            color: $white-color;
+        }
+    }
+}
+
+

@@ -1,0 +1,85 @@
+.products{
+    &__title {
+        text-align: center;
+        margin-top: 97px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: capitalize;
+    }
+    
+    &-sub-title {
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $grey-color;
+    }
+    
+    &__list {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__item {
+        height: 581px;
+        width: 360px;
+        background-color: $card-bkg;
+        margin-top: 30px;
+    }
+    
+    &__item-button{
+        position: absolute;
+        padding: 9px 13px;
+        border: 1px solid $white-color;
+        color: $white-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        top: 30%;
+        left: 30%;
+        background-color: transparent;
+        display: none;
+    }
+    
+    &__item:hover &__item-button{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__item:hover .item-wrapper:before{
+        display: block;
+    }
+    
+    &__item-basket{
+        margin-right: 11px;
+    }
+    
+    &__item-title {
+        font-weight: 400, Regular;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+        margin-top: 24px;
+    }
+    
+    &__item-text {
+        margin-top: 13px;
+        font-weight: 300, Light;
+        font-size: 14px;
+        line-height: 17px;
+        color: $grey-color;
+    }
+    
+    &__item-price {
+        margin-top: 18px;
+        font-weight: 400, Regular;
+        font-size: 16px;
+        line-height: 19px;
+        color: $pink-color;
+    }
+    
+}

@@ -1,0 +1,68 @@
+
+.dilivery__count{
+    margin-top: 59px;
+    height: 215px;
+    width: 360px;
+    background-color: $card-bkg;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &-sub{
+        margin-top: 39px;
+        margin-right: 34px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: $sales-bkg;
+        text-transform: uppercase;
+    }
+
+    &-sum{
+        margin-left: 20px;
+    }
+
+    &-grand{
+        margin-top: 12px;
+        margin-right: 37px;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &-sum--pink{
+        margin-left: 20px;
+        color: $button-bkg;
+    }
+
+    &-line{
+        width: 275px;
+        margin-top: 21px;
+        border: 0;
+        height: 1px;
+        background-color: $ezgrey-color;
+    }
+
+    &-button{
+        align-self: center;
+        margin-top: 17px;
+        width: 273px;
+        height: 50px;
+        text-transform: uppercase;
+        border-style: solid;
+        border-color: $button-bkg;
+        color: $pink-color;
+        background-color: $white-color;
+    }
+
+    &-button{
+        &:hover,
+        &:focus,
+        &:active{
+            background-color: $button-bkg;
+            color: $white-color;
+            border: none;
+        }
+    }
+}

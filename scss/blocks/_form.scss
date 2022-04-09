@@ -1,0 +1,196 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 38px;
+        text-align: center;
+        color: $blac-color;
+        text-transform: uppercase;
+    }
+    
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    &-registration {
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    &-registrtion__loyalty {
+        display: flex;
+        flex-direction: column;
+        max-width: 652px;
+        position: relative;
+    }
+    
+    &-registrtion__loyalty-title {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    
+    &-registrtion__loyalty-text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 16px;
+        position: relative;
+    }
+    &__subscribe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__subscribe-input{
+        min-height: 49px;
+        min-width: 256px;
+        padding-left: 22px;
+        background-color: $card-bkg;
+        border: none;
+        border-radius: 20px 0px 0px 20px;
+    }
+    
+    &__subscribe-button{
+        min-height: 49px;
+        min-width: 100px;
+        border: none;
+        background-color: $button-bkg;
+        text-transform: capitalize;
+        color: $white-color;
+        border-radius: 0px 20px 20px 0px;
+    }
+    
+    &__subscribe-button{
+        &:hover,
+        &:focus,
+        &:active{
+            cursor: pointer;
+            border: 1px solid $blue-border; 
+        }
+    }
+    
+    &__subscribe-input{
+        &:hover,
+        &:focus,
+        &:active{
+            border: 1px solid $blue-border;
+            cursor: pointer;
+        }
+    }
+    
+    &-registration__data{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &-registration__title{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+    }
+    
+    &-registration-indent{
+        margin-top: 33px;
+    }
+    
+    &-registration__input{
+        min-height: 45px;
+        width: 360px;
+        margin-top: 20px;
+        padding-left: 17px;
+        border: 1px solid $grey-color;
+    }
+    
+    &-registration__input{
+        &:hover,
+        &:focus,
+        &:active{
+        border-color: $blue-border;
+        cursor: pointer;
+        }
+    }
+    
+    &-registration__radio{
+        &:hover,
+        &:focus,
+        &:active{
+            cursor: pointer;
+        }  
+    }
+    &-registration__text{
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: $grey-color;
+        margin-top: 16px;
+        width: 360px;
+    }
+    
+    &__dilivery{
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+    }
+    
+    &__dilivery-title{
+        margin-top: 40px;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    &__dilivery-input{
+        min-height: 45px;
+        width: 360px;
+        margin-top: 20px;
+        padding-left: 17px;
+        border: 1px solid $grey-color;
+    }
+    
+    &__dilivery-input{
+        &:hover,
+        &:focus,
+        &:active{
+            border-color: $blue-border;
+            cursor: pointer;
+        }
+    }
+    
+    &__dilivery-button{
+        margin-top: 23px;
+        min-height: 34px;
+        width: 100px;
+        border-color: $grey-color;
+        background-color: $white-color;
+        text-transform: capitalize;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        border-style: solid;
+    }
+    
+    &__dilivery-button{
+        &:hover,
+        &:focus,
+        &:active{
+            background-color: $button-bkg;
+            color: $white-color;
+            border: none;
+        }
+    }
+}
+

@@ -1,0 +1,118 @@
+
+.header{
+    background-color: $black-bkg;
+
+    &__wrp {
+        display: flex;
+        align-items: center;
+        min-height: 75px;
+        justify-content: space-between;
+    }
+    
+    &__container{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__logo {
+        margin-right: 41px;
+    }
+    
+    &__search-icon {
+        border: none;
+        background-color: transparent;
+    }
+    
+    &__search-icon{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__form-input{
+        min-height: 27px;
+        border-radius: 0px 10px 10px 0px;
+    }
+    
+    &__form-input{
+        &:hover,
+        &:focus,
+        &:active{
+            border-color: $blue-border;
+            cursor: pointer;
+        }
+    }
+    
+    &__hover-icon {
+        fill: $white-color;
+    }
+    
+    &__hover-button:hover &__hover-icon,
+    &__hover-button:focus &__hover-icon,
+    &__hover-button:active &__hover-icon{
+            fill: $pink-color;
+            cursor: pointer;
+        }
+    
+    
+    &__menu-list {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__burger {
+        border: none;
+        background-color: transparent;
+    }
+    
+    &__link {
+        margin: 0 0 0 33px;
+    }
+    
+    &__link-effect {
+        position: absolute;
+    }
+    
+    &__dot {
+        position: relative;
+        right: 15px;
+        bottom: 15px;
+    }
+    
+    
+    &__menu-item{
+        position: relative;
+    
+    }
+    
+    &__nav{
+        position: absolute;
+        top: 100%;
+        margin-top: 23px;
+        display: none;
+        background-color: $card-bkg;
+        min-height: 764px;
+        min-width: 232px;
+        margin-left: 135px;
+        z-index: 1000;
+    }
+    
+    &__burger:hover +&__nav,
+    &__burger:focus +&__nav{
+        display: block;
+    }
+    
+    &-nav{
+        &:hover{
+            display: block;
+        }
+    } 
+    
+    &__nav-title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        margin-top: 37px;
+        margin-left: 34px;
+    }
+}
