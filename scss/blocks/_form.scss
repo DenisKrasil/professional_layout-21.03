@@ -4,25 +4,47 @@
     align-items: center;
 
     &__title {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 38px;
+        @include font(24px, 38px, 700);
         text-align: center;
         color: $blac-color;
         text-transform: uppercase;
+
+        @include tablet{
+            @include font(18px ,29px, 400);
+        }
+
+        @include mobile{
+            @include font(24px, 37px, 700);
+        }
     }
     
     &__text {
-        font-size: 18px;
-        line-height: 30px;
+        @include font(18px, 30px, 400);
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 32px;
+
+        @include tablet{
+            @include font(18px ,27px, 400);
+        }
+
+        @include mobile{
+            @include font(14px, 21px, 400);
+        }
     }
     &-registration {
         margin-top: 64px;
         display: flex;
         justify-content: space-around;
+
+        @include tablet{
+            margin-top: 40px;
+        }
+
+        @include mobile{
+            margin-top: 40px;
+            flex-direction: column;
+        }
     }
     
     &-registrtion__loyalty {
@@ -30,21 +52,41 @@
         flex-direction: column;
         max-width: 652px;
         position: relative;
+
+        @include tablet{
+            max-width: 45%;
+        }
+
+        @include mobile{
+            max-width: 95%;
+        }
     }
     
     &-registrtion__loyalty-title {
         text-transform: uppercase;
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 29px;
+        @include font(24px, 29px, 300);
+
+        @include tablet{
+            @include font(16px, 19px, 300);
+        }
+
+        @include mobile{
+            @include font(16px, 19px, 300);
+        }
     }
     
     &-registrtion__loyalty-text {
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 29px;
+        @include font(24px, 29px, 300);
         margin-top: 16px;
         position: relative;
+
+        @include tablet{
+            @include font(16px, 19px, 300);
+        }
+
+        @include mobile{
+            @include font(16px, 19px, 300);
+        }
     }
     &__subscribe{
         display: flex;
@@ -54,11 +96,15 @@
     
     &__subscribe-input{
         min-height: 49px;
-        min-width: 256px;
+        width: 355px;
         padding-left: 22px;
         background-color: $card-bkg;
         border: none;
         border-radius: 20px 0px 0px 20px;
+
+        @include mobile{
+            width: 240px;
+        }
     }
     
     &__subscribe-button{
@@ -95,9 +141,7 @@
     }
     
     &-registration__title{
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
+        @include font(16px, 19px, 300);
         text-transform: capitalize;
     }
     
@@ -111,6 +155,14 @@
         margin-top: 20px;
         padding-left: 17px;
         border: 1px solid $grey-color;
+
+        @include tablet{
+            max-width: 92%;
+        }
+
+        @include mobile{
+            max-width: 95%;
+        }
     }
     
     &-registration__input{

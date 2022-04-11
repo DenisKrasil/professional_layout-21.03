@@ -1,11 +1,18 @@
+.loyalty{
+    &-text__decor{
+        padding-left: 44px;
+    }
 
-.loyalty-text__decor:before {
-    content: '';
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 5px;
-    left: -25px;
-    background-image: url(../img/mark.svg);
-    background-size: 15px 15px;
+    &-text__decor:before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        background-image: url(../img/mark.svg);
+        background-size: 15px 15px;
+    }
 }
+
+
