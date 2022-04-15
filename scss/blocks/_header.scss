@@ -100,13 +100,23 @@
         background-color: $card-bkg;
         min-height: 764px;
         min-width: 232px;
-        margin-left: 135px;
+        margin-left: 170px;
         z-index: 1000;
+
+        @include tablet{
+            margin-left: 20%;
+            min-height: 470px;
+        }
+
+        @include mobile{
+            right: 0;
+            min-height: 363px;
+        }
     }
     
     &__burger:hover +&__nav,
-    &__burger:focus +&__nav
-    &__burger:active{
+    &__burger:focus +&__nav,
+    &__burger:active +&__nav{
         display: block;
     }
     
