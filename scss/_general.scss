@@ -41,7 +41,7 @@ input::placeholder{
     }
 
     @include mobile{
-        min-width: 92%;
+        max-width: 92%;
     }
 }
 
