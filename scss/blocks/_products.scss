@@ -2,17 +2,21 @@
     &__title {
         text-align: center;
         margin-top: 97px;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 36px;
+        @include font(30px, 36px, 400);
         text-transform: capitalize;
+
+        @include tablet{
+            margin-top: 155px;
+        }
+
+        @include mobile{
+            margin-top: 64px;
+        }
     }
     
     &-sub-title {
         text-align: center;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
+        @include font(14px, 17px, 400);
         color: $grey-color;
     }
     
@@ -22,6 +26,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+
+        @include mobile{
+            flex-direction: column;
+        }
     }
     
     &__item {
@@ -36,9 +44,7 @@
         padding: 9px 13px;
         border: 1px solid $white-color;
         color: $white-color;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
+        @include font(14px, 17px, 400);
         top: 30%;
         left: 30%;
         background-color: transparent;
@@ -59,26 +65,20 @@
     }
     
     &__item-title {
-        font-weight: 400, Regular;
-        font-size: 13px;
-        line-height: 16px;
+        @include font(13px, 16px, 400);
         text-transform: uppercase;
         margin-top: 24px;
     }
     
     &__item-text {
         margin-top: 13px;
-        font-weight: 300, Light;
-        font-size: 14px;
-        line-height: 17px;
+        @include font(14px, 17px, 300);
         color: $grey-color;
     }
     
     &__item-price {
+        @include font(16px, 19px, 400);
         margin-top: 18px;
-        font-weight: 400, Regular;
-        font-size: 16px;
-        line-height: 19px;
         color: $pink-color;
     }
     

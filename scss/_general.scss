@@ -33,15 +33,16 @@ input::placeholder{
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
-}
+    
+    @include tablet{
+        max-width: 92%;
+    }
 
-.container__wrp {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 79px;
+    @include mobile{
+        min-width: 92%;
+    }
 }
 
 main {

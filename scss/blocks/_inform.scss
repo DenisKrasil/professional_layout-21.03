@@ -3,11 +3,35 @@
     min-height: 448px;
     display: flex;
 
+    @include tablet{
+        min-height: 693px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @include mobile{
+        min-height: 550px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     &__wrp {
         display: flex;
         flex-grow: 1;
         align-items: center;
         justify-content: space-around;
+
+        @include tablet{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @include mobile{
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     
     &__img {
@@ -19,6 +43,14 @@
         flex-direction: column;
         align-items: center;
         width: 360px;
+
+        @include tablet{
+            margin-bottom: 60px;
+        }
+
+        @include mobile{
+            margin-bottom: 60px;
+        }
     }
     
     &__text {

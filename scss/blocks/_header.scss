@@ -66,6 +66,10 @@
     
     &__link {
         margin: 0 0 0 33px;
+
+        @include mobile{
+            display: none;
+        }
     }
     
     &__link-effect {
@@ -76,6 +80,10 @@
         position: relative;
         right: 15px;
         bottom: 15px;
+
+        @include mobile{
+            display: none;
+        }
     }
     
     
@@ -97,7 +105,8 @@
     }
     
     &__burger:hover +&__nav,
-    &__burger:focus +&__nav{
+    &__burger:focus +&__nav
+    &__burger:active{
         display: block;
     }
     

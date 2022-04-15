@@ -2,8 +2,27 @@
 .contacts {
     background-color: $black-bkg;
 
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 79px;
+
+        @include tablet{
+            justify-content: space-around
+        }
+
+        @include mobile{
+            flex-direction: column-reverse;
+            min-height: 143px;
+        }
+    }
     &__list {
         display: flex;
+
+        @include mobile{
+            margin-top: 40px;
+        }
     }
     
     &__link {
@@ -33,9 +52,7 @@
     
     &__rights {
         font-family: 'Lato';
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
+        @include font(16px, 19px, 400);
         color: $white-color;
     }
 }
