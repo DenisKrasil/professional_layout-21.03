@@ -92,6 +92,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include mobile{
+            width: 96%;
+        }
     }
     
     &__subscribe-input{
@@ -194,6 +198,19 @@
         display: flex;
         flex-direction: column;
         width: 360px;
+
+        @include tablet{
+            flex-wrap: wrap;
+            max-height: 350px;
+            margin-bottom: 128px;
+            width: 52%;
+        }
+
+        @include mobile{
+            flex-wrap: nowrap;
+            max-height: 500px;
+            width: 98%;
+        }
     }
     
     &__dilivery-title{
@@ -210,6 +227,10 @@
         margin-top: 20px;
         padding-left: 17px;
         border: 1px solid $grey-color;
+
+        @include tablet{
+            width: 90%;
+        }
     }
     
     &__dilivery-input{
