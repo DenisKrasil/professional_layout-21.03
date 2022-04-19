@@ -1,0 +1,239 @@
+.product{
+    &__heading{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $pink-bkg;
+        height: 148px;
+
+        @include tablet{
+            justify-content: space-between;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        @include mobile{
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        &-title{
+            text-transform: uppercase;
+            @include font(24px, 29px, 400);
+            color: $pink-color;
+        }
+
+        &-link{
+            text-transform: uppercase;
+            text-decoration: none;
+            @include font (14px, 17px, 300);
+            color: $menu-txt-color;
+
+            &:hover,
+            &:focus,
+            &:active{
+                color: $pink-color;
+                @include font (14px, 17px, 700);
+            }
+        }
+    }
+
+    &__list {
+        margin-top: 18px;
+        margin-bottom: 128px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobile{
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        height: 581px;
+        width: 360px;
+        background-color: $card-bkg;
+        margin-top: 30px;
+    }
+    
+    &__item-button{
+        position: absolute;
+        padding: 9px 13px;
+        border: 1px solid $white-color;
+        color: $white-color;
+        @include font(14px, 17px, 400);
+        top: 30%;
+        left: 30%;
+        background-color: transparent;
+        display: none;
+    }
+    
+    &__item:hover &__item-button{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__item:hover .item-wrapper:before{
+        display: block;
+    }
+    
+    &__item-basket{
+        margin-right: 11px;
+    }
+    
+    &__item-title {
+        @include font(13px, 16px, 400);
+        text-transform: uppercase;
+        margin-top: 24px;
+    }
+    
+    &__item-text {
+        margin-top: 13px;
+        @include font(14px, 17px, 300);
+        color: $grey-color;
+    }
+    
+    &__item-price {
+        @include font(16px, 19px, 400);
+        margin-top: 18px;
+        color: $pink-color;
+    }
+
+    @include tablet{
+        &__item-third{
+            display: none;
+        }
+
+        &__list{
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+    }
+
+    @include mobile{
+        &__item-second{
+            display: none;
+        }
+
+        &__item-third{
+            display: block;
+        }
+    }
+    &__colection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 64px;
+    }
+
+    &__colection-title-pink{
+        text-transform: uppercase;
+        color: $pink-color;
+        @include font(14px, 17px, 300);
+    }
+
+    &__collection-line-red{
+        width: 63px;
+        color: red;
+        height: 3px;
+        size: 3px;
+    }
+
+    &__colection-title{
+        text-transform: uppercase;
+        color: $dark_grey-bkg;
+        @include font(18px, 22px, 300);
+    }
+
+    &__colection-text{
+        @include font(14px, 17px, 300);
+        color: $menu-txt-color;
+        width: 48%;
+        text-align: center;
+        margin-top: 48px;
+
+        @include tablet{
+            width: 79%;
+        }
+
+        @include mobile{
+            width: 95%;
+        }
+    }
+
+    &__colection-price{
+        color: $pink-color;
+        @include font(24px, 29px, 300);
+        margin-top: 32px;
+    }
+
+    &__colection-line{
+        width: 56%;
+        height: 1px;
+        color: $grey-color;
+    }
+
+    &__colection-list{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 65px;
+    }
+
+    &__colection-item{
+        display: flex;
+        text-transform: uppercase;
+        text-align: center;
+        @include font(14px, 17px, 400);
+        color: $menu-txt-color;
+    }
+
+    &__colection-select{
+        margin-left: 9px;
+        border: none;
+        color: $menu-txt-color;
+    }
+
+    &__basket-wrp{
+        display: flex;
+        justify-content: center;
+        margin-top: 48px;
+    }
+
+    &__basket-button{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 17px;
+        width: 273px;
+        height: 50px;
+        text-transform: uppercase;
+        border-style: solid;
+        border-color: $button-bkg;
+        color: $pink-color;
+        background-color: $white-color;
+        fill: $pink-color;
+
+        &:hover,
+        &:focus,
+        &:active{
+            background-color: $button-bkg;
+            color: $white-color;
+            border: none;
+            fill: $white-color;
+        }
+    }
+
+    &__carousel-arrow{
+        fill: $black-bkg;
+
+        &:hover,
+        &:focus,
+        &:active{
+            fill: $pink-color;
+        }
+    }
+}
