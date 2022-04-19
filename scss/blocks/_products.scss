@@ -37,6 +37,10 @@
         width: 360px;
         background-color: $card-bkg;
         margin-top: 30px;
+
+        @include tablet{
+            
+        }
     }
     
     &__item-button{

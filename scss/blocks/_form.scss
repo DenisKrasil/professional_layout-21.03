@@ -254,6 +254,7 @@
         font-size: 11px;
         line-height: 13px;
         border-style: solid;
+        transition: border-radius 1s;
     }
     
     &__dilivery-button{
@@ -263,6 +264,7 @@
             background-color: $button-bkg;
             color: $white-color;
             border: none;
+            border-radius: 10px;
         }
     }
 }
