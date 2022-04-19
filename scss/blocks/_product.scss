@@ -216,6 +216,7 @@
         color: $pink-color;
         background-color: $white-color;
         fill: $pink-color;
+        transition: border-radius 1s;
 
         &:hover,
         &:focus,
@@ -224,6 +225,7 @@
             color: $white-color;
             border: none;
             fill: $white-color;
+            border-radius: 20px;
         }
     }
 

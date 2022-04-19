@@ -113,6 +113,7 @@
         border-color: $grey-color;
         border-style: solid;
         @include font(14px, 17px, 300);
+        transition: border-radius 1s;
 
         @include mobile{
             width: 49%;
@@ -130,6 +131,7 @@
         color: $white-color;
         border: none;
         cursor: pointer;
+        border-radius: 20px;
     }
 
     &__img{
