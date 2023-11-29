@@ -63,6 +63,7 @@
         border-color: $button-bkg;
         color: $pink-color;
         background-color: $white-color;
+        transition: border-radius 1s;
     }
 
     &-button{
@@ -72,6 +73,7 @@
             background-color: $button-bkg;
             color: $white-color;
             border: none;
+            border-radius: 15px;
         }
     }
 }

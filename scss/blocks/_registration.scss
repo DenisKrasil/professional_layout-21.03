@@ -36,6 +36,7 @@
         border-style: solid;
         border-color: $pink-color;
         margin-bottom: 113px;
+        transition: border-radius 1s;
 
         @include tablet{
             margin-bottom: 96px;
@@ -53,6 +54,7 @@
         background-color: $button-bkg;
         color: $white-color;
         fill: $white-color;
+        border-radius: 20px;
     }
     
     &__button-text{
